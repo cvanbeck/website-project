@@ -5,9 +5,9 @@
 
 body {
     background-color: var(--back-color);
-    margin: 75px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     
@@ -100,8 +100,8 @@ button:active{
     background-color: var(--title-color);
     position: fixed;
     float: left;
-    height: 130px;
-    width: 625px;
+    height: 17%;
+    width: 40%;
     border-radius: 25px;
     left: 50%;
     top: 21px;
