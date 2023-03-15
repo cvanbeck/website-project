@@ -4,19 +4,27 @@
 }
 
 body {
-    background-color: #231942;
+    background-color: var(--back-color);
     margin: 75px;
-    margin-top: 55px;
+    margin-top: 40px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --back-color: #231942;
+    --content-back-color: #5E548E;
+    --content-color: #9F86C0;
+    --title-color: #8B86BF;
+    --button-color: #E0E1DD
+
+
 }
 
 .content-body{
-    background-color: #5E548E;
+    background-color: var(--content-back-color);
     border-radius: 25px;
-    border-color: #231942;
+    border-color: var(--back-color);
     height: max-content;
     min-height: 80vh;
     max-width: 100vw;
@@ -24,7 +32,7 @@ body {
 }
 
 .content-holders{
-    background-color: #9F86C0;
+    background-color: var(--content-color);
 }
 
 .sidebar{
@@ -32,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    background-color: #9F86C0;
+    background-color: var(--content-color);
     padding: 35px;
     margin-top: 35px;
     margin-left: 100px;
@@ -51,9 +59,10 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     margin-bottom: 40px;
-    background-color: #D9D9D9;
+    background-color: var(--button-color);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
+    width:150px;
 }
 
 button:hover{
@@ -73,7 +82,7 @@ button:active{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: #9F86C0;
+    background-color: var(--content-color);
     border-radius: 17px;
     margin-right: 60px;
     margin-top: 65px;
@@ -88,21 +97,41 @@ button:active{
 }
 
 .title{
-    background-color: #BE95C4;
+    background-color: var(--title-color);
     position: fixed;
     float: left;
     height: 130px;
     width: 625px;
     border-radius: 25px;
-    left: 768px;
+    left: 50%;
     top: 21px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: white;
-    font-size: 64px;
+    font-size: 50px;
     font-weight:600;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    text-align: center;
 
 
+}
+.title:hover{
+    opacity: 40%;
+
+
+}
+@keyframes slideright {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translate(0%)
+    }
+}
+
+.title{
+    animation: 1s ease-in-out 0s 1 slideright;
 }
