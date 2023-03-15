@@ -5,19 +5,17 @@ body {
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     --back-color: #5E548E;
     --content-back-color: #5E548E;
     --button-back-color: #9F86C0;
     --content-color: white;
     --title-color: #8B86BF;
     --button-color: #E0E1DD
-
-
 }
 
-.content-body{
+.content-body {
     background-color: var(--content-back-color);
     border-radius: 10px;
     border-color: var(--back-color);
@@ -27,11 +25,11 @@ body {
     display: flex;
 }
 
-.content-holders{
+.content-holders {
     background-color: var(--content-color);
 }
 
-.sidebar{
+.sidebar {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -41,7 +39,7 @@ body {
     margin-left: 100px;
     border-radius: 19px;
     float: left;
-    position:fixed;
+    position: fixed;
 
 }
 
@@ -55,25 +53,26 @@ button {
     border-radius: 15px;
     margin-bottom: 40px;
     background-color: var(--button-color);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition-duration: 0.2s;
-    width:150px;
+    width: 150px;
 }
 
-button:hover{
+button:hover {
     background-color: #F4F4F4;
     transform: scale(1.05);
 
 }
 
-button:active{
+button:active {
     transform: translateY(1px)
 }
-.last-button{
+
+.last-button {
     margin: 0px;
 }
 
-.content{
+.content {
     display: grid;
 
     background-color: var(--content-color);
@@ -83,18 +82,18 @@ button:active{
     width: 811px;
     margin-bottom: 65px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding : 5%;
+    padding: 5%;
     padding-left: 50px;
     padding-right: 50px;
 
 }
 
-.sidebar-space{
+.sidebar-space {
     width: 437px;
 
 }
 
-.title{
+.title {
     background-color: var(--title-color);
     position: fixed;
     height: 17%;
@@ -107,7 +106,7 @@ button:active{
     color: white;
 
     font-size: 50px;
-    font-weight:600;
+    font-weight: 600;
 
     display: flex;
     justify-content: center;
@@ -119,7 +118,8 @@ button:active{
 
 
 }
-.title:hover{
+
+.title:hover {
     opacity: 20%;
 
 
@@ -129,21 +129,22 @@ button:active{
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translate(0%)
     }
 }
 
-.title{
+.title {
     animation: 1s ease-in-out 0s 1 slideright;
 }
 
-.content-boxes{ 
+.content-boxes {
     background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     max-width: 70%;
-    width: fit-content;
+    width: 70%;
     margin-top: 5%;
     padding: 15px;
     padding-left: 20px;
@@ -162,15 +163,15 @@ button:active{
 }
 
 
-p{
+p {
     margin: 0;
 }
 
-#center{
+#center {
     justify-self: center;
 }
 
-.crime-image{
+.crime-image {
     background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -181,7 +182,7 @@ p{
     padding-right: 20px;
 }
 
-.crime-image:hover{
+.crime-image:hover {
     transform: scale(1.2);
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
