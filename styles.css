@@ -184,6 +184,8 @@ p {
     
 }
 .index-body{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .flex-container-index{
     width: 100vw;
