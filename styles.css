@@ -160,6 +160,7 @@ button:active {
     padding-bottom: 20px;
     text-align: left;
     font-weight: bold;
+    max-width: 50%;
 }
 
 
@@ -283,3 +284,8 @@ p {
 #enter{
     animation: 3s ease-in-out 0s 1 slideupindex;
 }
+
+.nn{
+    width: 250px;
+}
+

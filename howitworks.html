@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,61 @@
     <link rel="stylesheet" href="styles.css">
     <title>How AI works</title>
 </head>
+
 <body>
     <div class="content-body">
         <div class="sidebar-space"></div>
         <ul class="sidebar">
-        <a href="intro.html">
-            <button>Intro</button></a> 
-        <a href="howitworks.html">
-            <button>How it works</button>  </a>
-        <a href="medicine.html">
-            <button>Medicine</button></a>
-        <a href="climate.html">
-            <button>Climate Change</button></a>
-        <a href="crime.html">
-            <button>Crime Prediction</button></a>
-        <a href="transportation.html">
-            <button class="last-button">Transportation</button></a>
+            <a href="intro.html">
+                <button>Intro</button></a>
+            <a href="howitworks.html">
+                <button>How it works</button> </a>
+            <a href="medicine.html">
+                <button>Medicine</button></a>
+            <a href="climate.html">
+                <button>Climate Change</button></a>
+            <a href="crime.html">
+                <button>Crime Prediction</button></a>
+            <a href="transportation.html">
+                <button class="last-button">Transportation</button></a>
         </ul>
         <div class="content">
-            <div class="content-boxes top-header" id="section-header">Placeholder</div>
+            <div class="content-boxes top-header" id="section-header">What do we mean by AI?</div>
             <div class="content-boxes" id="center">
-                <p>Placeholder</p>
+                <p>When discussing AI it is important to understand how it works, this is especially true when
+                    discussing any ethical issues. </p>
+            </div>
+            <div class="content-boxes" id="center">
+                <p>Whilst it is easy to think of all AI as alike it is in fact a very broad field full of a lot of
+                    different concepts. The AI we are discussing on this website however employ the use of Machine
+                    Learning(ML) to study data and learn from it. To understand ML however it is also important to
+                    understand Deep Learning and Neural Networks.</p>
+            </div>
+            <div class="content-boxes top-header" id="section-header">Neural Networks</div>
+            <div class="content-boxes" id="center">
+                <p>Neural networks are the most fundamental aspect of ML, they form connections based upon input
+                    similarly to how our brains work.</p>
+            </div>
+            <div class="content-boxes" id="center">
+                <p> NNs are composed of many different ‘neurons’ arranged in multiple layers: the input layer, one or
+                    more hidden layers, and the output layers. These individual neurons can be thought of as a thing
+                    that hold a number/weight. </p>
+            </div>
+            <div class="content-boxes" id="center">
+                <p>Each neuron can receive information, process that information and then pass that information along
+                    its connections. similarly to how the brain works. Whatever output node at the end has the largest
+                    weight will be the output of the neural network.</p>
             </div>
 
-            <img class="crime-image" id="center" src="images/crime-prediction.jpg">
+            <img class="crime-image nn" id="center" src="images/neuralnetworks.png">
+            <div class="content-boxes" id="section-header">Deep Learning</div>
+            <div class="content-boxes" id="center">Deep Learning (DL) is the next step up from neural networks. DL consists of multiple layers of neural networks, each individual neural network is responsible for analysing one thing which is then passed onto the next layer.</div>
+            <div class="content-boxes" id="section-header">Machine Learning</div>
+            <div class="content-boxes" id="center">	So you may ask yourself where is the ‘artificial intelligence’ in this process? This is where machine learning comes in, Machine Learning is the part that figures out the connections between nodes in the Neural Networks, the most common way to do this is by providing large amounts of data referred to as training data. </div>
+            <div class="content-boxes" id="center">Here is an excellent video by 3Blues1Brown that does a great job at explaining how to create a Neural Network that can analyse drawn numbers:</div>
+            <iframe class="content-boxes" id="center" width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-    <h1 class="title">How does AI work?</h1>
+        <h1 class="title">How does AI work?</h1>
 </body>
+
 </html>
