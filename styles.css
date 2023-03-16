@@ -184,10 +184,13 @@ p {
     
 }
 .index-body{
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .flex-container-index{
-    width: 91vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
