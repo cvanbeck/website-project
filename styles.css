@@ -289,3 +289,10 @@ p {
     width: 250px;
 }
 
+.names{
+    padding: 50px;
+    width: fit-content;
+    position: absolute;
+    color: white;
+
+}
